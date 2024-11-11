@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+}
+
+.frame{
+    background-color: #71a0b1d4;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact{
+    background-color: aliceblue;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #1b586eac;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 40%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.contactus{
+    position: absolute;
+    top: 20%;
+    font-size: 100px;
+    display: flex;
+    height: 30%;
+    z-index:3;
+
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 3em;
+    padding-top: 500px;
+    height: 60%;
+
+}
+
+.con li{
+    display: flex;
+    margin-bottom: 30px;
+    padding-left: 80px;
+    align-items: center;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 50px 50px; 
+   
+  }
+
+  .phone{
+    background-image: url(phone.png);
+  }
+
+  .email{
+    background-image: url(email.png);
+  }
+  .facebook{
+    background-image: url(facebook.png);
+  }
+

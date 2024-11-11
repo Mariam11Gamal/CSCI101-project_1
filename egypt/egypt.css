@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.container {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.slider {
+    flex-direction: row;
+	display: flex;
+    width: 100%;
+    height: 50vh;
+    overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	-ms-overflow-style: none;
+	scrollbar-width: none; 
+    
+
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 2rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+
+
+/* Landmark Grid */
+.landmarks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.landmark-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    display: inline-block; 
+}
+
+.landmark-item img {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    top: 0;
+    left: 0;    
+}
+
+
+.landmark-item .sphinx {
+    opacity: 1;
+  }
+
+  .landmark-item .map {
+    opacity: 0;
+  }
+
+  .landmark-item:hover .sphinx {
+    opacity: 0;
+  }
+
+  .landmark-item:hover .map {
+    opacity: 1;
+  }
+
+.landmark-item img:hover {
+    transform: scale(1.2);
+  }
+
+.landmark-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.landmark-item p {
+    padding: 0 10px 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+/* Landmark Grid */
+.Landmarks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.Landmark-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    display: inline-block; 
+}
+
+.Landmark-item img {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    top: 0;
+    left: 0;    
+}
+
+
+.Landmark-item .pyramids {
+    opacity: 1;
+  }
+
+  .Landmark-item .Map {
+    opacity: 0;
+  }
+
+  .Landmark-item:hover .pyramids {
+    opacity: 0;
+  }
+
+  .Landmark-item:hover .Map {
+    opacity: 1;
+  }
+
+.Landmark-item img:hover {
+    transform: scale(1.2);
+  }
+
+.Landmark-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.Landmark-item p {
+    padding: 0 10px 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.index {
+  box-shadow: 0;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%;
+  width: 170vh;
+  height: 90vh;
+  background-image: url(../index/egypt.png);
+  position: relative;
+  display: flex;        
+  justify-content: center;
+  align-items: center;
+  margin: 1% 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

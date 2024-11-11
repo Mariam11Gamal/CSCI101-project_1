@@ -1,0 +1,85 @@
+html {
+    scroll-behavior:smooth ;
+}
+.black-box { 
+    background-color: #000000;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 0;
+    left: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 28px 9px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 2px 3px 28px 9px rgba(0,0,0,0.45);
+    -moz-box-shadow: 2px 3px 28px 9px rgba(0,0,0,0.45);
+}
+.pipeline ,.pipeline1 {
+    background-color: #009688;
+    width: 7px;
+    height: 150px;
+    position: absolute;
+    left: -10px;
+    top: 15%;
+}
+.pipeline1 {
+    background-color: #000000;
+    width: 1px;
+    height: 27vh;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: #f1f1f1;
+    margin-left: 50%;
+    top: 3vh;
+}
+.blackbox-child,.blackbox-child2  {
+
+    background-color: #000000;
+    width: 30%;
+    height: 75%;
+    margin: 0;
+    padding: 2% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.blackbox-child2 
+{
+    padding-right: 0 ;
+    font-size: 1.5rem;
+    color: #ffffff;
+    width: 70%;
+    background-color: black;
+}
+
+.flag0,.france0,.italy0,.germany0,.australia0,.china0,.uk0,.egypt0,.russia0,.japan0,.Turkey0{
+        margin: 1.5%;
+        border-radius: 50%;
+        height: 3vw; 
+        width: 3vw;
+        background-size: cover;
+        background-position: center; 
+
+        filter: contrast(70%);
+}      
+
+
+    .Turkey0 {
+        background-image: url(flags/turkey.jpg);
+    }
+    .france0 {background-image: url(flags/satin-france-flag-gkho3ksm6aiq9rbu.jpg);}
+    .italy0 {background-image: url(flags/italy.jpg);}
+    .germany0 {background-image: url(flags/germany.jpg);}
+    .australia0 {background-image: url(flags/Australia.jpg);}
+    .china0 {background-image: url(flags/china.jpg);}
+    .uk0 {background-image: url(flags/UK.jpg);}
+    .egypt0 {background-image: url(flags/egypt.jpg);}
+    .russia0 {background-image: url(flags/russia.jpg);}
+    .japan0 {background-image: url(flags/japan.jpg);}
+    .flag0:hover,.france0:hover,.italy0:hover,.germany0:hover,.australia0:hover,.china0:hover,.uk0:hover,.egypt0:hover,.russia0:hover,.japan0:hover{
+    
+    filter: contrast(130%);
+    
+    }

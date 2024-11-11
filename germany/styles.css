@@ -1,0 +1,86 @@
+html {
+    overflow-x: hidden;
+}
+.slider {
+    flex-direction: row;
+	display: flex;
+    width: 100%;
+    height: 50vh;
+    overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	-ms-overflow-style: none;
+	scrollbar-width: none; 
+
+}
+.slider img {
+    flex: 1 0 100%;
+	object-fit: cover;
+    position: relative; 
+    animation: translate 20s linear infinite;
+}
+
+
+.container {
+    margin-top: 10px; 
+    display: flex;  
+    flex-direction: column;
+    max-width: 100%;
+    gap: 50px;
+}
+
+.cathedral {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    padding: 5px;
+    gap:5px;
+
+}
+.gate{
+    display: flex;
+    max-width: 100%;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 5px;
+    gap:5px;
+
+}
+.castle {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    padding: 5px;
+    gap:5px;
+}
+.img{
+    width: 40%;
+    border: 5px solid black;
+    border-radius: 10px;
+    height: 300px;
+}
+.text{
+    width: 40%;
+    font-size: 30px;
+    border: 5px solid black;
+    border-radius: 10px;
+    overflow-x: hidden;
+    height: 300px;
+    text-align: center;
+    margin: 0;
+}
+.span {
+    font-size: 50px;
+}
+@keyframes translate {
+  0% {
+    transform: translateX(-10%);
+  }
+  50%{
+    transform: translateX(190%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}

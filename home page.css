@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;                                                                                   
+    
+}
+body {
+    font-family: 'Cairo', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+.box-text {
+    font-size: 60px;
+    font-family: Cairo, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #56d5ff;
+    line-height: 2;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    font-family: "Playwrite GB S", cursive;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {                                                                      
+    background-color: #008CBA; 
+    border-radius: 10px; 
+    border: 2px solid #ffffff; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #005f7f; 
+}
+.video-container {
+    min-width: 100%;
+    height: 100vh;
+    width: 90%;
+    display: flex;                                                                  
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: -1;                                                                
+}
+.video {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    filter: brightness(60%);
+    z-index: -1;
+    
+}
+.main-text{
+    font-family: 'Bebas Neue', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    color: #56d5ff;
+    line-height: 1.2;
+    position: absolute;
+    text-indent: -100px;
+
+    left: 42%;
+}
+
+.main-text::first-line{
+
+    
+    color: rgb(232, 215, 215);
+    font-size: 120px;
+}
+
+/*//////////////////////////////////*******************************************/
+
+
+.container, .container2 {
+    position: relative;
+    height: 350px;
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    margin: 3% 3% 5% 4.5%;
+}
+.brief {
+    box-shadow: 2px 3px 28px 9px rgba(0,0,0,0.45);
+-webkit-box-shadow: 2px 3px 28px 9px rgba(0,0,0,0.45);
+-moz-box-shadow: 2px 3px 28px 9px rgba(0,0,0,0.45);
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    right: -20%;
+    top: 0;
+    height: 100%;
+    width: 15%;
+    text-align: center;
+    display: flex;
+    border-radius: 5%;
+    justify-content: center;
+    padding: 8px;
+}
+.brief-header {
+text-align: center;
+
+width: 100%;
+height: 10%;
+font-size: 22px;
+top: 0px;
+position: absolute;
+}
+.brief-body {
+
+    
+    top: 10%;
+    display: flex;               
+    justify-content: center;      /* Horizontal centering */
+    align-items: center;          /* Vertical centering */
+    text-align: center;           /* Centers text horizontally */
+    color: #793030;
+    height: 84%;
+    width: 100%;
+}
+.c1, .c2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 15%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: -1px 1px 153px -9px rgba(0,0,0,0.42);
+    -webkit-box-shadow: -1px 1px 153px -9px rgba(0,0,0,0.42);
+    -moz-box-shadow: -1px 1px 153px -9px rgba(0,0,0,0.42);
+}
+
+.c1 {
+    font-size: 40px;
+    color: rgb(1, 94, 94);
+}
+
+.c2 {
+    font-size: 40px;
+    color: red;
+}
+
+.box, .box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10 {
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 85%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;                                                  
+    border-radius: 3%;
+    transition: transform 2s ease-in-out, opacity 0.4s ease-in;
+    transition-delay: 0.5s;
+    margin-bottom: 20px; 
+}
+
+
+.box:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover,.box9:hover,.box10:hover ,.box2:hover {
+    transition-delay: 0s;
+    opacity: 0;
+    transform: translateY(0%);                      
+}
+
+.box { background-image: url(RUSSIAAAAAA.jpg); }
+.box2 { background-image: url(germany.jpg); }
+.box3 { background-image: url(france.jpg); }
+.box4 { background-image: url(china.jpg); }
+.box5 { background-image: url(japan.jpg); }
+.box6 { background-image: url(egypt.jpg); }
+.box7 { background-image: url(holland.jpg); }
+.box8 { background-image: url(Australia.jpg); }
+.box9 { background-image: url(italy.png); }
+.box10 { background-image: url(uk2.jpg); }
+.text-layer, .text-layer2 {
+    position: absolute;
+    width: 75%;
+    top: 0;
+    left: 19%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.7em;
+    z-index: 1;
+    padding: 2%;
+}
+
+
+.text-layer::after, .text-layer2::after {
+    content: "";
+    background-color: #009688;
+    width: 10px;
+    height: 150px;
+    position: absolute;
+    right: 0px;
+    top: 40%;
+}
+.brief::after {
+    content: "";
+    background-color: #ff0000;
+    width: 90%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+}
+.text-layer::before, .text-layer2::before {
+    content: "";
+    width: 0px;
+    margin-top: -10px;
+    height: 0px;
+    border-style: solid;
+    border-width: 20px;
+    border-color: transparent #009688 transparent transparent;
+    position: absolute;
+    left: -60px;
+    top: 50%;
+}
+
+.pipeline ,.pipeline1 {
+    background-color: #009688;
+    width: 7px;
+    height: 150px;
+    position: absolute;
+    left: -10px;
+    top: 15%;
+}
+.pipeline1 {
+    background-color: #000000;
+    width: 1px;
+    height: 27vh;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: #f1f1f1;
+    margin-left: 50%;
+    top: -4vh;
+}
+.flags,.france,.italy,.germany,.australia,.china,.uk,.egypt,.russia,.japan, .Turkey{
+position: absolute;
+width: 100%;
+height: 40%;
+top: 0;
+background-size: cover;
+box-shadow: -1px -74px 57px -34px rgba(0,0,0,0.84) inset;
+-webkit-box-shadow: -1px -74px 57px -34px rgba(0,0,0,0.84) inset;
+-moz-box-shadow: -1px -74px 57px -34px rgba(0,0,0,0.84) inset;
+}
+.Turkey {background-image: url(flags/Turkey.jpg);}
+.france {background-image: url(flags/satin-france-flag-gkho3ksm6aiq9rbu.jpg);}
+.italy {background-image: url(flags/italy.jpg);}
+.germany {background-image: url(flags/germany.jpg);}
+.australia {background-image: url(flags/Australia.jpg);}
+.china {background-image: url(flags/china.jpg);}
+.uk {background-image: url(flags/UK.jpg);}
+.egypt {background-image: url(flags/egypt.jpg);}
+.russia {background-image: url(flags/russia.jpg);}
+.japan {background-image: url(flags/japan.jpg);}
+
+.black-box { 
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 0;
+    left: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 28px 9px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 2px 3px 28px 9px rgba(0,0,0,0.45);
+    -moz-box-shadow: 2px 3px 28px 9px rgba(0,0,0,0.45);
+}
+.blackbox-child,.blackbox-child2  {
+    background-color: #000000;
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    padding: 2% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.blackbox-child2 
+{
+    padding-right: 0 ;
+    font-size: 1.5rem;
+    color: #ffffff;
+    width: 70%;
+    background-color: black;
+}
+
+.flag0,.france0,.italy0,.germany0,.australia0,.china0,.uk0,.egypt0,.russia0,.japan0, .Turkey0{
+        margin: 1.5%;
+        border-radius: 50%;
+        height: 3vw; 
+        width: 3vw;
+        background-size: cover;
+        background-position: center; 
+        min-width: 3vw;
+        min-height: 3vh;
+        filter: contrast(70%);
+}      
+
+
+    .Turkey0 {background-image: url(flags/turkey.jpg);}
+    .france0 {background-image: url(flags/satin-france-flag-gkho3ksm6aiq9rbu.jpg);}
+    .italy0 {background-image: url(flags/italy.jpg);}
+    .germany0 {background-image: url(flags/germany.jpg);}
+    .australia0 {background-image: url(flags/Australia.jpg);}
+    .china0 {background-image: url(flags/china.jpg);}
+    .uk0 {background-image: url(flags/UK.jpg);}
+    .egypt0 {background-image: url(flags/egypt.jpg);}
+    .russia0 {background-image: url(flags/russia.jpg);}
+    .japan0 {background-image: url(flags/japan.jpg);}
+    .flag0:hover,.france0:hover,.italy0:hover,.germany0:hover,.australia0:hover,.china0:hover,.uk0:hover,.egypt0:hover,.russia0:hover,.japan0:hover,.Turkey0:hover{
+    
+    filter: contrast(130%);
+    
+    }
